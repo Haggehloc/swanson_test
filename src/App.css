@@ -28,6 +28,28 @@
   color: #61dafb;
 }
 
+.suggestions {
+  display: block;
+  width: 1400px;
+  height: 200px;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding-top: 20px;
+}
+
+.banner{
+  display: inline-block;
+  width: 1400px;
+  vertical-align: middle;
+}
+
+.container {
+  display: block;
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

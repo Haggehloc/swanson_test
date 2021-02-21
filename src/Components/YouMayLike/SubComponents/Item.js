@@ -15,7 +15,8 @@ class Item extends React.Component {
 
         const containerStyles = {
             width:"250px",
-            display: "inline-block"
+            display: "inline-block",
+            verticalAlign: "top"
         }
 
         const srcStyles = {
@@ -31,7 +32,7 @@ class Item extends React.Component {
             display: "inline-block"
         }
 
-        const premiumStyle = {
+        const accountTypeStyle = {
             textAlign: "center",
             fontSize: "0.7vw"
         }
@@ -51,7 +52,12 @@ class Item extends React.Component {
         const priceStyle = {
             textAlign: "center",
             fontWeight: "bold",
-            fontSize: ".9vw"
+            fontSize: ".9vw",
+            paddingBottom:"1vw"
+        }
+
+        if(this.props.isSale){
+            priceStyle.color = "red"
         }
 
         const addToCartStyle = {
@@ -76,6 +82,8 @@ class Item extends React.Component {
 
         const price = this.props.price;
 
+        const accountType = this.props.accountType;
+
         return (
             <div style={containerStyles}>
                 <div style={srcStyles}>
@@ -96,8 +104,8 @@ class Item extends React.Component {
                             ({reviewNumber})
                         </div>
                     </div>
-                    <div style={premiumStyle}>
-                        Swanson Premium
+                    <div style={accountTypeStyle}>
+                        {accountType}
                     </div>
                     <div style={detailStyle}>
                         {details}
@@ -108,7 +116,7 @@ class Item extends React.Component {
                     </div>
                     <br />
                     <div style={priceStyle}>
-                        ${price}
+                        {price}
                     </div>
                     <a href={onClickLink()}><input type="button" style={addToCartStyle} value="add to cart"/> </a>
                 </div>

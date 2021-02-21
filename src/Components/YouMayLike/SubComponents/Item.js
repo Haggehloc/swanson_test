@@ -1,6 +1,8 @@
 import React from "react";
-
+import Styles from "../../../styles/itemSelectStyles";
 import ReactStars from "react-rating-stars-component/dist/react-stars";
+
+const {priceStyle, containerStyles, ratingsStyle, ratingsSubStyle, accountTypeStyle, detailStyle, contentStyle, addToCartStyle} = Styles;
 
 class Item extends React.Component {
 
@@ -13,80 +15,21 @@ class Item extends React.Component {
             return this.props.link
         }
 
-        const containerStyles = {
-            width:"250px",
-            display: "inline-block",
-            verticalAlign: "top"
-        }
-
-        const srcStyles = {
-
-        }
-
-        const ratingsStyle = {
-            display: "block",
-            textAlign: "center"
-        }
-
-        const ratingsSubStyle = {
-            display: "inline-block"
-        }
-
-        const accountTypeStyle = {
-            textAlign: "center",
-            fontSize: "0.7vw"
-        }
-
-        const detailStyle = {
-            textAlign: "center",
-            fontWeight: "bold",
-            fontSize: ".8vw"
-
-        }
-
-        const contentStyle = {
-            textAlign: "center",
-            fontSize: "0.9vw"
-        }
-
-        const priceStyle = {
-            textAlign: "center",
-            fontWeight: "bold",
-            fontSize: ".9vw",
-            paddingBottom:"1vw"
-        }
+        const finalPriceStyle = Object.create(priceStyle);
 
         if(this.props.isSale){
-            priceStyle.color = "red"
-        }
-
-        const addToCartStyle = {
-            display: "block",
-            marginLeft: "auto",
-            marginRight: "auto",
-            width: "7vw",
-            backgroundColor: "#d44400",
-            color: "white",
-            fontWeight: "bold",
-            fontSize:"1vw",
-            borderStyle: "solid",
-            borderColor: "#00AA66",
-            borderWidth: "0"
+            finalPriceStyle.color = "red"
         }
 
         const details = this.props.details;
-
         const reviewNumber = this.props.reviews;
-
         const content = this.props.content;
-
         const price = this.props.price;
-
         const accountType = this.props.accountType;
 
         return (
             <div style={containerStyles}>
-                <div style={srcStyles}>
+                <div>
                     <img src={this.props.src}/>
                 </div>
                 <div>

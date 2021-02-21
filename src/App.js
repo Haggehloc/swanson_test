@@ -3,6 +3,7 @@ import './App.css';
 import Banner from './Components/Banner';
 import React from "react";
 import Suggestion from "./Components/Suggestion";
+import YouMayLike from "./Components/YouMayLike/YouMayLike";
 
 import joint from "./resources/joints_suggestion.webp";
 import mightyMagnesium from "./resources/mighty_magnesium.png";
@@ -25,6 +26,9 @@ class App extends React.Component {
               />
               <Suggestion src={preProBiotics}/>
           </div>
+            <div>
+                <YouMayLike />
+            </div>
         </div>
     );
   }

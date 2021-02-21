@@ -1,5 +1,4 @@
 import React from "react";
-import joint from "../resources/joints_suggestion.webp";
 
 const styles = (paddingRight) => {
     return {width: "33.33333%",

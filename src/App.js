@@ -26,9 +26,7 @@ class App extends React.Component {
               />
               <Suggestion src={preProBiotics}/>
           </div>
-            <div>
-                <YouMayLike />
-            </div>
+          <YouMayLike />
         </div>
     );
   }

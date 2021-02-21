@@ -15,16 +15,21 @@ class App extends React.Component {
     return (
         <div className="container">
           <div className="banner">
-            <Banner/>
+            <Banner link="https://bit.ly/2ZCOcZK"/>
           </div>
           <div className="suggestions">
               <Suggestion src={joint}
                           paddingRight="10px"
+                          link="https://bit.ly/2ZCOcZK"
               />
               <Suggestion src={mightyMagnesium}
                           paddingRight="10px"
+                          link="https://bit.ly/2ZCOcZK"
               />
-              <Suggestion src={preProBiotics}/>
+              <Suggestion
+                  src={preProBiotics}
+                  link="https://bit.ly/2ZCOcZK"
+              />
           </div>
           <YouMayLike />
         </div>

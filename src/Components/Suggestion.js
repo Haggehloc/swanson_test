@@ -6,6 +6,15 @@ const styles = (paddingRight) => {
     }
 }
 
-const Suggestion = props => <input type="image" style = {styles(props.paddingRight)} className="suggestion" src={props.src}/>
+class Suggestion extends React.Component{
+    render() {
+        return (
+            <a href={this.props.link}>
+                <input type="image" style={styles(this.props.paddingRight)} className="suggestion" src={this.props.src}/>
+            </a>
+        )
+    }
+
+}
 
 export default Suggestion;

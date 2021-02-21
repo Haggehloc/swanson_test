@@ -23,7 +23,7 @@ class LineBreakWithText extends React.Component {
             position: "absolute",
             zIndex: "10",
             top:"0",
-            left:"50%",
+            left:"42%",
             color: "green",
             fontWeight: "bold",
             display: "inline-block",

@@ -2,12 +2,14 @@
 const styles = {
     containerStyles: {
         width: "250px",
-        height: "29vw",
+        height: "450px",
         display: "inline-block",
-        verticalAlign: "top"
+        verticalAlign: "top",
+        whiteSpace: "nowrap",
+
     },
 
-    ratingsStyl: {
+    ratingsStyle: {
         display: "block",
         textAlign: "center"
     },
@@ -24,7 +26,8 @@ const styles = {
     detailStyle: {
         textAlign: "center",
         fontWeight: "bold",
-        fontSize: ".8vw"
+        fontSize: ".8vw",
+        whiteSpace: "normal"
 
     },
 
@@ -37,14 +40,15 @@ const styles = {
         textAlign: "center",
         fontWeight: "bold",
         fontSize: ".9vw",
-        paddingBottom: "1vw"
     },
 
     addToCartStyle: {
         display: "block",
         marginLeft: "auto",
-        marginRight: "auto",
-        width: "7vw",
+        marginRight: "-50%",
+        marginBottom: "auto",
+        left: "30%",
+        width: "40%",
         height: "2vw",
         backgroundColor: "#d44400",
         color: "white",
@@ -53,7 +57,7 @@ const styles = {
         borderStyle: "solid",
         borderColor: "#00AA66",
         borderWidth: "0",
-        verticalAlign: "bottom"
+        position:"absolute",
     },
 
     hrLineStyle: {

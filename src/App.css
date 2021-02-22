@@ -58,3 +58,8 @@
     transform: rotate(360deg);
   }
 }
+.innerContainer {
+  height: 450px;
+  display: inline-grid;
+  position: relative;
+}

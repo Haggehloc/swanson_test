@@ -18,7 +18,8 @@ class YouMayLike extends React.Component {
         const itemContainerStyle = {
             position:"absolute",
             margin:"auto",
-            transform: "translate(5%)"
+            transform: "translate(5%)",
+            whiteSpace: "nowrap"
         }
         return (
             <div>

@@ -53,7 +53,7 @@ const styles = {
         backgroundColor: "#d44400",
         color: "white",
         fontWeight: "bold",
-        fontSize: "1vw",
+        fontSize: "100%",
         borderStyle: "solid",
         borderColor: "#00AA66",
         borderWidth: "0",
